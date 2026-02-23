@@ -1,5 +1,5 @@
 global:
-  domain: alice-settlement-saas.alice-platform.com
+  domain: alice-settlement-saas.alicelaw.net
 frontend:
   replicas: 2
   image: alice-settlement-saas/frontend:latest

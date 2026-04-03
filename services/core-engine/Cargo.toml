@@ -12,13 +12,6 @@ tower-http = { version = "0.6", features = ["cors", "trace"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 uuid = { version = "1", features = ["v4"] }
-alice-settlement = { path = "../../../ALICE-Settlement", optional = true }
-alice-fix = { path = "../../../ALICE-FIX", optional = true }
-
-[features]
-default = []
-alice-core = ["alice-settlement", "alice-fix"]
-
 [profile.release]
 opt-level = 3
 lto = "fat"
